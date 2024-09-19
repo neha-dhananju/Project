@@ -28,7 +28,7 @@ class DataIngestion:
 
 
         try:
-            data=pd.read_scv(Path(os.path.join("notebooks/data","train.csv")))
+            data=pd.read_csv(Path(os.path.join("notebooks/data","train.csv")))
             logging.info("Data has read")
 
 
@@ -45,7 +45,7 @@ class DataIngestion:
             logging.info("train_test_split has completed")
 
             train_data.to_csv(self.ingestion_config.train_data_path,index=False)
-            test_data.to_csv(self.ingestion_config.train_data_path,index=False)
+            test_data.to_csv(self.ingestion_config.test_data_path,index=False)
 
             logging.info("Data ingestion part completed")
 
