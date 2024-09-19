@@ -33,7 +33,7 @@ class DataIngestion:
 
 
 
-            os.makedirs(os.path.join(self.ingestion_config.raw_data_path),exist_ok=True)
+            os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
             data.to_csv(self.ingestion_config.raw_data_path,index=False)
             logging.info("I have saved raw data in artifact folder ")
 
