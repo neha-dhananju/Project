@@ -14,7 +14,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OrdinalEncoder,StandardScaler
 
 
-from src.DimondPricePrediction.utils import save_object
+from src.DimondPricePrediction.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
