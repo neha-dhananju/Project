@@ -18,13 +18,13 @@ from src.DimondPricePrediction.utils.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join("artifacrs","preprocessor.pkl")
+    preprocessor_obj_file_path=os.path.join("artifacts","preprocessor.pkl")
 
 
 
-class DataTransoformation:
+class DataTransformation:
     def __init__(self):
-        self.data_tranformation_config=DataTransformationConfig()
+        self.data_transformation_config=DataTransformationConfig()
 
     def get_data_tranformation(self):
         try:

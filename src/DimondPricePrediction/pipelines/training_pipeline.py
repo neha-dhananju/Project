@@ -22,5 +22,5 @@ data_transformation=DataTransformation()
 train_arr,test_arr=data_transformation.initialize_data_transformation(train_data_path,test_data_path)
 
 model_trainer_obj=ModelTrainer()
-model_trainer.initiate_model_training(train_arr,test_arr)
+model_trainer_obj.initiate_model_training(train_arr,test_arr)
 
