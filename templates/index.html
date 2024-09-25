@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Container for background transparency */
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;
+            height: 100%;
+            background-image: url('static/bg1.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            opacity: 1; /* Adjust this value for transparency (0.5 is 50% transparent) */
+            z-index: -1; /* Puts the background behind the content */
+        }
+
+        /* Centered Open button */
+        .content {
+            z-index: 1;
+        }
+
+        .open-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .open-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-overlay"></div>
+
+    <div class="content">
+        <a href="{{ url_for('predict_datapoint') }}" class="open-btn">Open</a>
+    </div>
+
+</body>
+</html>
