@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main   # run when you push to main branch
+      - master   # run when you push to main branch
 
 jobs:
   deploy:
